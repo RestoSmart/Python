@@ -100,4 +100,3 @@ class Preprocessing:
             dfRetorno[i] = encoder.transform(dfRetorno[i])
 
         return diccionarioEncoder, dfRetorno
-    

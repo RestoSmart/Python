@@ -1,15 +1,16 @@
-# Importa la libreria JSON
-import json
-# Importa la libreria requests
-import requests
-# Importa la libreria pandas
-import pandas as pd
-
-
 class ETL:
     """
     Clase que contiene algunas de las funciones mas usadas dentro de los procesos de ETL
     """
+    # Importa la libreria JSON
+    import json
+    # Importa la libreria requests
+    import requests
+    # Importa la libreria pandas
+    import pandas as pd
+
+    def __init__(self):
+        pass
 
     def JSONFileReader(self, rutaArchivo):
         """

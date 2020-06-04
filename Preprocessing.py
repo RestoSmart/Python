@@ -1,14 +1,16 @@
+# Importacion del modelo de KMeans
+from sklearn.cluster import KMeans
+# Importa la libreria MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler
+# Importa la libreria StandardScaler
+from sklearn.preprocessing import StandardScaler
+
+
 class Preprocessing:
     """
     Clase que contiene algunas de las funciones mas usadas dentro de los procesos de aprendizaje automatico utilizando
     la libreria de Scikit learn
     """
-    # Importacion del modelo de KMeans
-    from sklearn.cluster import KMeans
-    # Importa la libreria MinMaxScaler
-    from sklearn.preprocessing import MinMaxScaler
-    # Importa la libreria StandardScaler
-    from sklearn.preprocessing import StandardScaler
 
     def __init__(self):
         pass

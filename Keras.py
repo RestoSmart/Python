@@ -1,15 +1,17 @@
+# Importa la libreria Sequiential de Keras Tensorflow
+from tensorflow.keras.models import Sequential
+# Importa la libreria del optimizador Adam de Keras Tensorflow
+from tensorflow.keras.optimizers import Adam
+# Importa la libreria de capa Dense de Keras Tensorflow
+from tensorflow.keras.layers import Dense
+# Se importa la libreria de Pandas
+import pandas as pd
+
+
 class useKeras:
     """
     Clase que contiene algunas de las funciones para ejecutar modelos de Machine Learning con Keras
     """
-    # Importa la libreria Sequiential de Keras Tensorflow
-    from tensorflow.keras.models import Sequential
-    # Importa la libreria del optimizador Adam de Keras Tensorflow
-    from tensorflow.keras.optimizers import Adam
-    # Importa la libreria de capa Dense de Keras Tensorflow
-    from tensorflow.keras.layers import Dense
-    # Se importa la libreria de Pandas
-    import pandas as pd
 
     def __init__(self):
         pass

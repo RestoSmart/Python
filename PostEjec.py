@@ -1,20 +1,21 @@
+# Importacion de seaborn
+import seaborn as sns
+# Importacion de pyplot
+import matplotlib.pyplot as plt
+# Importacion de numpy
+import numpy as np
+# Importacion de pandas
+import pandas as pd
+# Importacion de export_graphviz
+from sklearn.tree import export_graphviz
+# Importacion de pydot
+import pydot
+
+
 class PostEjec:
     """
     Clase que contiene algunas de las funciones para validacion de los resultados de algunos modelos de Machine Learning
     """
-
-    # Importacion de seaborn
-    import seaborn as sns
-    # Importacion de pyplot
-    import matplotlib.pyplot as plt
-    # Importacion de numpy
-    import numpy as np
-    # Importacion de pandas
-    import pandas as pd
-    # Importacion de export_graphviz
-    from sklearn.tree import export_graphviz
-    # Importacion de pydot
-    import pydot
 
     def __init__(self):
         pass
@@ -108,7 +109,8 @@ class PostEjec:
         :param variables: Nombre de las variables
         :param desicisionTree: SKLearn DecisionTreeRegressor
         """
-        export_graphviz(desicisionTree, out_file='tree.dot', feature_names=list(variables), rounded=True, proportion=False,
+        export_graphviz(desicisionTree, out_file='tree.dot', feature_names=list(variables), rounded=True,
+                        proportion=False,
                         precision=2, filled=True)
 
         # Use dot file to create a graph

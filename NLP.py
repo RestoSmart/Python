@@ -1,5 +1,9 @@
+# Importacion de pandas
 import pandas as pd
+# Importacion de nltk
 import nltk
+# Importacion de TextBlob para sentiment analysis
+from textblob import TextBlob
 
 
 class NLP:
@@ -54,3 +58,24 @@ class NLP:
         df_fdist = pd.DataFrame.from_dict(freq, orient='index').reset_index()
 
         return df_fdist
+
+    def sentimentAnalysis(self, df, columnaTexto):
+        """
+        Funcion que agrga las columna de polaridad y subjetividad
+        :param df: Pandas DataFrame con las variables de texto
+        :param columnaTexto: Columna que se le aplicara el sentiment analysis
+        :return: Un Pandas DataFrame con la informacion extra
+        """
+        # Funcion para calcular la polaridad del texto
+        pol = lambda x: TextBlob(x).sentiment.polarity
+
+        # Funcion para calcular la subjetividad del texto
+        sub = lambda x: TextBlob(x).sentiment.subjectivity
+
+        # Se actualiza los valores de polaridad
+        df['polarity'] = df[columnaTexto].apply(pol)
+
+        # Se actualiza los valores de subjetividad
+        df['subjectivity'] = df[columnaTexto].apply(sub)
+
+        return df

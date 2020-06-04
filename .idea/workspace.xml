@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7db4dcf1-e3d1-4af3-886d-bc246ce18fbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NLP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ETL.py" beforeDir="false" afterPath="$PROJECT_DIR$/ETL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keras.py" beforeDir="false" afterPath="$PROJECT_DIR$/Keras.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PostEjec.py" beforeDir="false" afterPath="$PROJECT_DIR$/PostEjec.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NLP.py" beforeDir="false" afterPath="$PROJECT_DIR$/NLP.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
